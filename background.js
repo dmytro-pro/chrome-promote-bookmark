@@ -1,3 +1,4 @@
+
 chrome.commands.onCommand.addListener(async (command) => {
     if (command === "promote-bookmark") {
         try {
