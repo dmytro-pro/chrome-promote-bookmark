@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Promoter",
+  "version": "1.0",
+  "description": "Promote the current bookmark to the top of its folder.",
+  "permissions": [
+    "bookmarks",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "promote-bookmark": {
+      "suggested_key": {
+        "default": "Alt+P",
+        "mac": "Alt+P"
+      },
+      "description": "Promote current bookmark to top of folder"
+    }
+  }
+}
